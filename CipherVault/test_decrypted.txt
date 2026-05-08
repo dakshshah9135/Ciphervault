@@ -1,0 +1,1 @@
+This is a top-secret file. Contains sensitive information like passwords, API keys, and private data.

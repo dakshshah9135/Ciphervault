@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"/>
+<title>CipherVault Audit Log</title>
+<style>
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#f3f4f6;margin:0;padding:2rem;color:#111827}
+  .wrap{max-width:900px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.08)}
+  .hd{background:linear-gradient(135deg,#0f172a,#1a2b4a);color:#fff;padding:2rem 2.5rem}
+  .sec{padding:1.5rem 2.5rem}
+  h2{font-size:14px;font-weight:700;color:#1e293b;text-transform:uppercase;letter-spacing:.5px;padding-bottom:6px;border-bottom:2px solid #e5e7eb;margin-bottom:1rem}
+  footer{text-align:center;padding:1rem;font-size:12px;color:#9ca3af;border-top:1px solid #f1f5f9}
+</style></head><body>
+<div class="wrap">
+  <div class="hd">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:.5rem">
+      <div style="width:42px;height:42px;background:#3b82f6;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px">🔐</div>
+      <div><div style="font-size:1.4rem;font-weight:800">CipherVault</div>
+           <div style="font-size:11px;color:#94a3b8;letter-spacing:2px;text-transform:uppercase">Encryption Audit Log</div></div>
+    </div>
+    <div style="color:#94a3b8;font-size:13px">2026-05-08 10:03:32 &nbsp;|&nbsp; 3 operation(s) recorded</div>
+  </div>
+  <div class="sec">
+    <h2>Operations</h2>
+    
+        <div style="border:1px solid #e5e7eb;border-left:4px solid #16a34a;border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px;background:#fff">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div style="font-weight:700;color:#111;font-size:14px">ENCRYPT</div>
+            <span style="background:#16a34a;color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;font-weight:700">SUCCESS</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;font-size:12px">
+            <div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">input_file:</span> <strong style="color:#111;word-break:break-all">test_secret.txt</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">output_file:</span> <strong style="color:#111;word-break:break-all">test_secret.txt.vault</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">original_size:</span> <strong style="color:#111;word-break:break-all">102</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">encrypted_size:</span> <strong style="color:#111;word-break:break-all">187</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">algorithm:</span> <strong style="color:#111;word-break:break-all">AES-256-CTR</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">kdf:</span> <strong style="color:#111;word-break:break-all">PBKDF2-HMAC-SHA256 (200,000 iterations)</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">integrity:</span> <strong style="color:#111;word-break:break-all">HMAC-SHA256</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">salt_hex:</span> <strong style="color:#111;word-break:break-all">cc05268374ed553f...</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">iv_hex:</span> <strong style="color:#111;word-break:break-all">8eabe7f7f5bbd78b...</strong></div>
+          </div>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-left:4px solid #dc2626;border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px;background:#fff">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div style="font-weight:700;color:#111;font-size:14px">HASH</div>
+            <span style="background:#dc2626;color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;font-weight:700">—</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;font-size:12px">
+            <div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">file:</span> <strong style="color:#111;word-break:break-all">test_secret.txt</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">size:</span> <strong style="color:#111;word-break:break-all">102</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">MD5:</span> <strong style="color:#111;word-break:break-all">906e2f5252dce29454fe9a64224ed1fc</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">SHA1:</span> <strong style="color:#111;word-break:break-all">56d291c2a2b9d97a98239d8ea79dc868821efb8b</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">SHA256:</span> <strong style="color:#111;word-break:break-all">8cccc1acb4ef6ee99998274068ff7dec2ba1c00d4aecba7b5250685c936cfbf4</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">SHA512:</span> <strong style="color:#111;word-break:break-all">f87fa748e0742d81824c914f3465490d757d097e957825e0ae553d1a2ff97090b879f74ea1435204bf997088abe2f93f24e07b957684f5571e7ae569e73198e8</strong></div>
+          </div>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-left:4px solid #16a34a;border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px;background:#fff">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div style="font-weight:700;color:#111;font-size:14px">DECRYPT</div>
+            <span style="background:#16a34a;color:#fff;padding:2px 10px;border-radius:4px;font-size:11px;font-weight:700">SUCCESS</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;font-size:12px">
+            <div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">input_file:</span> <strong style="color:#111;word-break:break-all">test_secret.txt.vault</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">output_file:</span> <strong style="color:#111;word-break:break-all">test_decrypted.txt</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">decrypted_size:</span> <strong style="color:#111;word-break:break-all">102</strong></div><div style="background:#f8fafc;border-radius:6px;padding:6px 10px"><span style="color:#6b7280">integrity:</span> <strong style="color:#111;word-break:break-all">HMAC-SHA256 ✓ VERIFIED</strong></div>
+          </div>
+        </div>
+  </div>
+  <div class="sec" style="background:#fffbeb;border-top:1px solid #fef3c7">
+    <div style="font-size:12px;color:#92400e">
+      🔒 <strong>Security Note:</strong> CipherVault uses AES-256-CTR encryption with PBKDF2-HMAC-SHA256 key derivation
+      (200,000 iterations) and HMAC-SHA256 integrity verification (encrypt-then-MAC pattern).
+      Never share your password or store it alongside encrypted files.
+    </div>
+  </div>
+  <footer>CipherVault v1.0 &nbsp;|&nbsp; Built by <strong>Daksh Shah</strong> &nbsp;|&nbsp; github.com/daksh-shah9135/ciphervault</footer>
+</div></body></html>
